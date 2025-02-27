@@ -12,7 +12,7 @@
 
 - **Gestión de Clientes**: 
   - Registro de información personal (nombre, dirección, correo electrónico, teléfono).
-  - Historial de compras para cada cliente detallando los productos comprados, en que cantidad y el métodos de pago utilizado que puede ser efectivo, tarjeta de crédito o transferencia bancaria.
+  - Historial de compras para cada cliente detallando los productos comprados, en que cantidad y el método de pago utilizado que puede ser efectivo, tarjeta de crédito o transferencia bancaria.
 
 - **Gestión de Proveedores**: 
   - Información de contacto de proveedores.
