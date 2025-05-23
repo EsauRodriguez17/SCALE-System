@@ -96,8 +96,43 @@ GET_OFERTA_BY_IDPRODUCTO="SELECT * FROM ofertas WHERE id_producto = ?"
 
 # Proveedores
 
+INSERT_PROVEEDOR = """
+INSERT INTO proveedores (nombre, direccion, correo, telefono)
+VALUES (?, ?, ?, ?);
+"""
+DELETE_PROVEEDOR = "DELETE FROM proveedores WHERE id_proveedor = ?"
+
 GET_ALL_PROVEEDORES = "SELECT * FROM proveedores ORDER BY id_proveedor ASC;"
+
+GET_PROVEEDORES="""
+        SELECT id_proveedor, nombre, direccion, correo, telefono, fecha_registro
+        FROM proveedores
+        ORDER BY id_proveedor ASC
+"""
 
 
 # Categorías
 GET_ALL_CATEGORIAS = "SELECT * FROM categorias ORDER BY id_categoria ASC;"
+
+
+# Clientes
+INSERT_CLIENTE = """
+INSERT INTO clientes (nombre, direccion, correo, telefono, fecha_registro)
+VALUES (?, ?, ?, ?, ?);
+"""
+
+DELETE_CLIENTE = """
+DELETE FROM clientes
+WHERE id_cliente = ?;
+"""
+
+UPDATE_CLIENTE = """
+UPDATE clientes
+SET nombre = ?, direccion = ?, correo = ?, telefono = ?, fecha_registro = ?
+WHERE id_cliente = ?;
+"""
+
+GET_ALL_CLIENTES = """
+SELECT id_cliente, nombre, direccion, correo, telefono, fecha_registro
+FROM clientes;
+"""
