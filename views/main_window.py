@@ -170,9 +170,9 @@ class MainWindow(QMainWindow):
         self.content_layout.addWidget(ProveedoresView())
 
     def show_ventas(self):
-        from views.ventas_view import VentasView
+        from views.ventas_view import VentaView
         self.clear_content()
-        self.content_layout.addWidget(VentasView())
+        self.content_layout.addWidget(VentaView())
         
     def close_Window(self):
         self.close()
