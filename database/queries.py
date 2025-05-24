@@ -136,3 +136,14 @@ GET_ALL_CLIENTES = """
 SELECT id_cliente, nombre, direccion, correo, telefono, fecha_registro
 FROM clientes;
 """
+
+#ventas
+# Proveedores
+
+INSERT_VENTA = """
+INSERT INTO ventas (id_cliente, fecha_venta, metodo_pago, total)
+VALUES (?, ?, ?, ?);
+"""
+
+
+GET_VENTA = "SELECT * FROM ventas ORDER BY id_venta ASC;"
