@@ -25,8 +25,8 @@
   - Registro de pagos al realizar ventas.
 
 ## Tecnologías Utilizadas  
-- **Lenguaje**:   
-- **Base de Datos**:   
-- **Interfaz gráfica**:    
+- **Lenguaje**:   Python
+- **Base de Datos**:   SQLite
+- **Interfaz gráfica**:   PySide6 
 
 
